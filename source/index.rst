@@ -13,4 +13,5 @@ Documentação AMALIA
    como_usar
    rag
    model_card
+   use_cases
 
