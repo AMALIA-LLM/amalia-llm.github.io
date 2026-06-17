@@ -47,7 +47,7 @@ html_theme_options = {
         }
     ],
     "use_download_button": False,
-    "extra_footer": "<div>AMALIA: Agente Multimodal Automático de Linguagem com IA<br>Todos os materiais estão disponíveis de acordo com a licença Apache 2.0</div>",
+    "extra_footer": "<div>AMALIA: Assistente Multimodal Automático de Linguagem com IA<br>Todos os materiais estão disponíveis de acordo com a licença Apache 2.0</div>",
 }
 html_favicon = '_static/favicon.png'
 html_js_files = [
