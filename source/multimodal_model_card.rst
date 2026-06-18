@@ -147,7 +147,7 @@ em capacidades específicas do português europeu e da cultura portuguesa:
    desenvolvido para avaliar o conhecimento dos modelos sobre a cultura e a história portuguesas,
    abrangendo cinco categorias distintas: Arte, Gastronomia, Localidades, Monumentos e Personalidades.
 
-A avaliação mostra que, dentro dos modelos abertos, **o AMALIA-VL é
-altamente competitivo em Português Europeu**, com excelente desempenho
+A avaliação mostra que, dentro dos modelos abertos, o AMALIA-VL é
+**altamente competitivo** em português europeu, com excelente desempenho
 em tarefas de compreensão de texto em imagens e em tarefas de
 ancoragem de respostas a imagens.
