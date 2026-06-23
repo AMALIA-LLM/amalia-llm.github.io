@@ -1,7 +1,7 @@
 Utilização com RAG
 ==================
 
-*Retrieval Augmented Generation* (RAG) é uma técnica usada para melhorar as respostas por um
+*Retrieval Augmented Generation* (RAG) é uma técnica usada para melhorar as respostas dadas por um
 LLM com recurso a informação guardada externamente. Desta forma, o
 modelo poderá responder de forma mais precisa e com informação factual
 em domínios específicos recorrendo a bases de dados de documentos
@@ -50,6 +50,7 @@ base de dados OpenSearch e interagir com os seus índices da forma:
 .. code:: python
 
    from opensearchpy import OpenSearch
+
    client = OpenSearch(
        hosts = [{'host': host, 'port': port}],
        http_compress = True,
