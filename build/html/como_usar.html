@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Como Usar &#8212; Documentação AMALIA</title>
+    <title>Introdução &#8212; Documentação AMALIA</title>
   
   
   
@@ -51,7 +51,7 @@
     <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Utilização com RAG" href="rag.html" />
+    <link rel="next" title="Construir Aplicações RAG" href="rag.html" />
     <link rel="prev" title="Documentação AMALIA" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -176,8 +176,8 @@
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main Navigation">
     <div class="bd-toc-item navbar-nav">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Como Usar</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rag.html">Utilização com RAG</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Introdução</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rag.html">Construir Aplicações RAG</a></li>
 <li class="toctree-l1"><a class="reference internal" href="model_card.html">Model Card</a></li>
 <li class="toctree-l1"><a class="reference internal" href="multimodal_model_card.html">Multimodal Model Card</a></li>
 <li class="toctree-l1"><a class="reference internal" href="use_cases.html">Casos de Uso</a></li>
@@ -533,7 +533,7 @@ document.addEventListener("DOMContentLoaded", function() {
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Como Usar</h1>
+    <h1>Introdução</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -543,9 +543,9 @@ document.addEventListener("DOMContentLoaded", function() {
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acesso-via-api">Acesso via API</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acesso-ao-modelo-publico">Acesso ao Modelo Público</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#como-servir-uma-api-localmente">Como servir uma API localmente</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acesso-via-iaedu">Acesso via IAedu</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacao">Instalação</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#servir-uma-api-localmente">Servir uma API localmente</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#utilizacao-de-api-local">Utilização de API local</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#utilizacao-do-modelo-multimodal">Utilização do Modelo Multimodal</a></li>
 </ul>
@@ -561,10 +561,22 @@ document.addEventListener("DOMContentLoaded", function() {
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="como-usar">
-<h1>Como Usar<a class="headerlink" href="#como-usar" title="Link to this heading">#</a></h1>
-<section id="acesso-via-api">
-<h2>Acesso via API<a class="headerlink" href="#acesso-via-api" title="Link to this heading">#</a></h2>
+  <section id="introducao">
+<h1>Introdução<a class="headerlink" href="#introducao" title="Link to this heading">#</a></h1>
+<p>O AMALIA é um modelo de linguagem aberto e criado especificamente para
+o português de Portugal e para a cultura portuguesa.</p>
+<p>O AMALIA é desenvolvido por um consórcio de universidades e centros de
+investigação portugueses, incluindo a Universidade NOVA de Lisboa,
+Instituto Superior Técnico, Universidade de Coimbra, Universidade do
+Porto, Universidade do Minho e pela Fundação para a Ciência e
+Tecnologia. O desenvolvimento inclui colaborações com a Universidade
+da Beira Interior, Universidade de Évora, e Instituto Superior de Engenharia
+de Lisboa.</p>
+<p>Esta colaboração é financiada pelos Programas de Desenvolvimento e
+Inovação do Governo de Portugal, com o objetivo de criar um assistente
+de IA avançado capaz de comunicar eficazmente em português europeu.</p>
+<section id="acesso-via-iaedu">
+<h2>Acesso via IAedu<a class="headerlink" href="#acesso-via-iaedu" title="Link to this heading">#</a></h2>
 <p>O AMALIA está disponível via API no <a class="reference external" href="https://iaedu.pt">IAedu</a> para
 professores e investigadores. Após realizar login e escolher o modelo
 AMALIA, os parâmetros da API podem ser obtidos clicando na roda no canto
@@ -594,36 +606,14 @@ código:</p>
 <p>Neste exemplo, <code class="docutils literal notranslate"><span class="pre">message</span></code> representa a mensagem enviada ao modelo e
 <code class="docutils literal notranslate"><span class="pre">thread_id</span></code> é o identificador da conversa, para manutenção do
 contexto.</p>
-<!-- No caso de aceder ao modelo via uma API disponibilizada por vLLM, o código a usar é:
-
-````python
-import requests
-headers = {
-    "Content-Type": "application/json",
-    "Authorization": token
-}
-payload = {
-    "model": model_name,
-    "messages": [
-        {
-            "role": "user",
-            "content": message
-        }
-    ]
-}
-response = requests.post(url, headers=headers, json=payload)
-if response.status_code == 200:
-    print(response.json()['choices'][0]['message']['content'])
-````
-
-Aqui, o pedido é enviado para o endereço indicado em ``url``, autenticado com um certo ``token``. O modelo com o nome indicado em ``model_name`` responderá então à mensagem  enviada em ``message``.
-
-Para manter o contexto de uma conversa por esta via, as mensagens anteriores poderão ser incluídas na lista de ``messages``, indicando o ``role`` de ``user`` ou ``assistant`` para mensagens do utilizador e do AMALIA respetivamente. --></section>
-<section id="acesso-ao-modelo-publico">
-<h2>Acesso ao Modelo Público<a class="headerlink" href="#acesso-ao-modelo-publico" title="Link to this heading">#</a></h2>
-<p>O AMALIA está publicamente disponível em código-aberto via <a class="reference external" href="https://huggingface.co/amalia-llm">HuggingFace</a>.</p>
-<section id="como-servir-uma-api-localmente">
-<h3>Como servir uma API localmente<a class="headerlink" href="#como-servir-uma-api-localmente" title="Link to this heading">#</a></h3>
+</section>
+<section id="instalacao">
+<h2>Instalação<a class="headerlink" href="#instalacao" title="Link to this heading">#</a></h2>
+<p>Todos os modelos do AMALIA estão publicamente disponíveis em código-aberto via <a class="reference external" href="https://huggingface.co/amalia-llm">HuggingFace</a>.
+Esta secção destina-se a explicar como qualquer pessoa ou entidade poderá
+instalar o AMALIA e como este poderá então ser utilizado para qualquer tipo de aplicações.</p>
+<section id="servir-uma-api-localmente">
+<h3>Servir uma API localmente<a class="headerlink" href="#servir-uma-api-localmente" title="Link to this heading">#</a></h3>
 <p>Para servir localmente o AMALIA, o hardware mínimo é de uma GPU <a class="reference external" href="https://www.nvidia.com/en-eu/data-center/a100/">NVIDIA A100 40GB</a>, sendo que
 para aplicações com vários clientes é recomendado um mínimo de 4 destas GPUs.
 O software recomendado é o <a class="reference external" href="https://vllm.ai/">vLLM</a> instalado em ambiente <a class="reference external" href="https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html">conda</a> com Python 3.12+:</p>
@@ -803,7 +793,7 @@ Para tal, basta seguir os passos detalhados anteriormente, adicionando apenas um
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Utilização com RAG</p>
+        <p class="prev-next-title">Construir Aplicações RAG</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -825,9 +815,9 @@ Para tal, basta seguir os passos detalhados anteriormente, adicionando apenas um
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acesso-via-api">Acesso via API</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acesso-ao-modelo-publico">Acesso ao Modelo Público</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#como-servir-uma-api-localmente">Como servir uma API localmente</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acesso-via-iaedu">Acesso via IAedu</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacao">Instalação</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#servir-uma-api-localmente">Servir uma API localmente</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#utilizacao-de-api-local">Utilização de API local</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#utilizacao-do-modelo-multimodal">Utilização do Modelo Multimodal</a></li>
 </ul>

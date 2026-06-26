@@ -1,8 +1,24 @@
-Como Usar
-=========
+Introdução
+==========
 
-Acesso via API
---------------
+O AMALIA é um modelo de linguagem aberto e criado especificamente para
+o português de Portugal e para a cultura portuguesa.
+
+O AMALIA é desenvolvido por um consórcio de universidades e centros de
+investigação portugueses, incluindo a Universidade NOVA de Lisboa,
+Instituto Superior Técnico, Universidade de Coimbra, Universidade do
+Porto, Universidade do Minho e pela Fundação para a Ciência e
+Tecnologia. O desenvolvimento inclui colaborações com a Universidade
+da Beira Interior, Universidade de Évora, e Instituto Superior de Engenharia
+de Lisboa.
+
+Esta colaboração é financiada pelos Programas de Desenvolvimento e
+Inovação do Governo de Portugal, com o objetivo de criar um assistente
+de IA avançado capaz de comunicar eficazmente em português europeu.
+
+
+Acesso via IAedu
+----------------
 
 O AMALIA está disponível via API no `IAedu <https://iaedu.pt>`__ para
 professores e investigadores. Após realizar login e escolher o modelo
@@ -36,41 +52,15 @@ Neste exemplo, ``message`` representa a mensagem enviada ao modelo e
 ``thread_id`` é o identificador da conversa, para manutenção do
 contexto.
 
-.. raw:: html
+Instalação
+----------
 
-   <!-- No caso de aceder ao modelo via uma API disponibilizada por vLLM, o código a usar é:
+Todos os modelos do AMALIA estão publicamente disponíveis em código-aberto via `HuggingFace <https://huggingface.co/amalia-llm>`__.
+Esta secção destina-se a explicar como qualquer pessoa ou entidade poderá
+instalar o AMALIA e como este poderá então ser utilizado para qualquer tipo de aplicações.
 
-   ````python
-   import requests
-   headers = {
-       "Content-Type": "application/json",
-       "Authorization": token
-   }
-   payload = {
-       "model": model_name,
-       "messages": [
-           {
-               "role": "user",
-               "content": message
-           }
-       ]
-   }
-   response = requests.post(url, headers=headers, json=payload)
-   if response.status_code == 200:
-       print(response.json()['choices'][0]['message']['content'])
-   ````
-
-   Aqui, o pedido é enviado para o endereço indicado em ``url``, autenticado com um certo ``token``. O modelo com o nome indicado em ``model_name`` responderá então à mensagem  enviada em ``message``.
-
-   Para manter o contexto de uma conversa por esta via, as mensagens anteriores poderão ser incluídas na lista de ``messages``, indicando o ``role`` de ``user`` ou ``assistant`` para mensagens do utilizador e do AMALIA respetivamente. -->
-
-Acesso ao Modelo Público
-------------------------
-
-O AMALIA está publicamente disponível em código-aberto via `HuggingFace <https://huggingface.co/amalia-llm>`__.
-
-Como servir uma API localmente
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Servir uma API localmente
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Para servir localmente o AMALIA, o hardware mínimo é de uma GPU `NVIDIA A100 40GB <https://www.nvidia.com/en-eu/data-center/a100/>`__, sendo que
 para aplicações com vários clientes é recomendado um mínimo de 4 destas GPUs.

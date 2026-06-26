@@ -1,5 +1,5 @@
-Utilização com RAG
-==================
+Construir Aplicações RAG
+========================
 
 *Retrieval Augmented Generation* (RAG) é uma técnica usada para melhorar as respostas dadas por um
 LLM com recurso a informação guardada externamente. Desta forma, o
@@ -294,11 +294,11 @@ Segurança
 Em diversas aplicações, será útil garantir que os pedidos dos utilizadores
 respeitam normas de segurança antes de realizar qualquer processamento.
 
-Para este propósito, foi utilizado o `Qwen3Guard <https://qwen.ai/blog?id=qwen3guard>`__
-em vários casos de uso do AMALIA, sendo
-possível classificar os pedidos dos utilizadores como seguros, inseguros
-ou controversos, bem como obter uma categoria para o tipo de insegurança.
+Para este propósito, foi desenvolvido o modelo de salvaguardas AMALIA,
+disponível no HuggingFace. Este modelo poderá atuar ao nível dos pedidos
+dos utilizadores, filtrando pedidos perigosos que devem ser barrados de imediato,
+protegendo assim o bom funcionamento do sistema informático.
 
-Com esta informação, o fluxo da aplicação poderá ser adaptado
+Com esta salvaguarda, o fluxo da aplicação poderá ser adaptado
 para devolver respostas padrão seguras quando os pedidos não são seguros.
 

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Utilização com RAG &#8212; Documentação AMALIA</title>
+    <title>Construir Aplicações RAG &#8212; Documentação AMALIA</title>
   
   
   
@@ -52,7 +52,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Model Card" href="model_card.html" />
-    <link rel="prev" title="Como Usar" href="como_usar.html" />
+    <link rel="prev" title="Introdução" href="como_usar.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -176,8 +176,8 @@
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main Navigation">
     <div class="bd-toc-item navbar-nav">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="como_usar.html">Como Usar</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Utilização com RAG</a></li>
+<li class="toctree-l1"><a class="reference internal" href="como_usar.html">Introdução</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Construir Aplicações RAG</a></li>
 <li class="toctree-l1"><a class="reference internal" href="model_card.html">Model Card</a></li>
 <li class="toctree-l1"><a class="reference internal" href="multimodal_model_card.html">Multimodal Model Card</a></li>
 <li class="toctree-l1"><a class="reference internal" href="use_cases.html">Casos de Uso</a></li>
@@ -533,7 +533,7 @@ document.addEventListener("DOMContentLoaded", function() {
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Utilização com RAG</h1>
+    <h1>Construir Aplicações RAG</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -557,8 +557,8 @@ document.addEventListener("DOMContentLoaded", function() {
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="utilizacao-com-rag">
-<h1>Utilização com RAG<a class="headerlink" href="#utilizacao-com-rag" title="Link to this heading">#</a></h1>
+  <section id="construir-aplicacoes-rag">
+<h1>Construir Aplicações RAG<a class="headerlink" href="#construir-aplicacoes-rag" title="Link to this heading">#</a></h1>
 <p><em>Retrieval Augmented Generation</em> (RAG) é uma técnica usada para melhorar as respostas dadas por um
 LLM com recurso a informação guardada externamente. Desta forma, o
 modelo poderá responder de forma mais precisa e com informação factual
@@ -824,11 +824,11 @@ conforme os documentos indexados na base de dados.</p>
 <h2>Segurança<a class="headerlink" href="#seguranca" title="Link to this heading">#</a></h2>
 <p>Em diversas aplicações, será útil garantir que os pedidos dos utilizadores
 respeitam normas de segurança antes de realizar qualquer processamento.</p>
-<p>Para este propósito, foi utilizado o <a class="reference external" href="https://qwen.ai/blog?id=qwen3guard">Qwen3Guard</a>
-em vários casos de uso do AMALIA, sendo
-possível classificar os pedidos dos utilizadores como seguros, inseguros
-ou controversos, bem como obter uma categoria para o tipo de insegurança.</p>
-<p>Com esta informação, o fluxo da aplicação poderá ser adaptado
+<p>Para este propósito, foi desenvolvido o modelo de salvaguardas AMALIA,
+disponível no HuggingFace. Este modelo poderá atuar ao nível dos pedidos
+dos utilizadores, filtrando pedidos perigosos que devem ser barrados de imediato,
+protegendo assim o bom funcionamento do sistema informático.</p>
+<p>Com esta salvaguarda, o fluxo da aplicação poderá ser adaptado
 para devolver respostas padrão seguras quando os pedidos não são seguros.</p>
 </section>
 </section>
@@ -850,7 +850,7 @@ para devolver respostas padrão seguras quando os pedidos não são seguros.</p>
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Como Usar</p>
+        <p class="prev-next-title">Introdução</p>
       </div>
     </a>
     <a class="right-next"
