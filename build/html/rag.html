@@ -299,13 +299,17 @@ LLM com recurso a informação guardada externamente. Desta forma, o
 modelo poderá responder de forma mais precisa e com informação factual
 em domínios específicos recorrendo a bases de dados de documentos
 selecionados.</p>
-<p>Um fluxo comum de RAG está representado no diagrama abaixo. Este começa por extrair termos de pesquisa
-relevantes a partir da mensagem do utilizador (1). Com estes termos é feita
-uma pesquisa numa base de dados (2) de onde se obtêm um conjunto de documentos
-potencialmente relevantes para responder ao utilizador (3). Estes documentos
-são introduzidos no contexto do modelo (4) para a resposta final ser
-gerada com as devidas citações (5).</p>
-<a class="reference internal image-reference" href="_images/RAG.png"><img alt="Fluxo RAG" src="_images/RAG.png" style="width: 800px;" />
+<p>Um fluxo comum de RAG está representado no diagrama abaixo.
+Primeiramente, o pedido do utilizador poderá passar por um filtro de
+segurança para garantir que a restante aplicação fica protegida (1).
+Depois, o LLM começará por extrair termos de pesquisa
+relevantes a partir da mensagem do utilizador (2). Estes termos
+serão passados por <em>encoder</em> que possibilitará realizar
+uma pesquisa semântica numa base de dados (3) de onde se obtêm um conjunto de documentos
+potencialmente relevantes para responder ao utilizador (4). Estes documentos
+são introduzidos no contexto do modelo (5) para a resposta final ser
+gerada com as devidas citações (6).</p>
+<a class="reference internal image-reference" href="_images/RAG2.png"><img alt="Fluxo RAG" src="_images/RAG2.png" style="width: 800px;" />
 </a>
 <section id="indexacao-e-pesquisa-de-documentos">
 <h2>Indexação e Pesquisa de Documentos<a class="headerlink" href="#indexacao-e-pesquisa-de-documentos" title="Link to this heading">#</a></h2>
@@ -316,8 +320,9 @@ recomendada a utilização de uma base de dados que permita esta
 funcionalidade, como é o caso do
 <a class="reference external" href="https://opensearch.org/">OpenSearch</a>.</p>
 <p>De forma a tirar partido de pesquisa semântica, é necessário gerar
-vetores de <em>embeddings</em> semânticos para cada documento usando um modelo
-do tipo <em>SentenceTransformers</em>, existindo uma variedade de modelos
+vetores de <em>embeddings</em> semânticos para cada documento. Para isto,
+é usado um <em>encoder</em>, que será um modelo
+do tipo <em>SentenceTransformers</em>. Existe uma variedade de modelos
 multilingues deste tipo publicamente disponíveis, tais como o <a class="reference external" href="https://huggingface.co/Qwen/Qwen3-Embedding-0.6B">Qwen3-Embedding-0.6B</a>,
 o <a class="reference external" href="https://huggingface.co/BAAI/bge-m3">BGE-M3</a> ou o <a class="reference external" href="https://huggingface.co/nomic-ai/nomic-embed-text-v1.5">nomic-embed-text-v1.5</a>.
 Estes podem ser usados como no exemplo:</p>

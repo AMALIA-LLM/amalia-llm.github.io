@@ -7,14 +7,18 @@ modelo poderá responder de forma mais precisa e com informação factual
 em domínios específicos recorrendo a bases de dados de documentos
 selecionados.
 
-Um fluxo comum de RAG está representado no diagrama abaixo. Este começa por extrair termos de pesquisa
-relevantes a partir da mensagem do utilizador (1). Com estes termos é feita
-uma pesquisa numa base de dados (2) de onde se obtêm um conjunto de documentos
-potencialmente relevantes para responder ao utilizador (3). Estes documentos
-são introduzidos no contexto do modelo (4) para a resposta final ser
-gerada com as devidas citações (5).
+Um fluxo comum de RAG está representado no diagrama abaixo.
+Primeiramente, o pedido do utilizador poderá passar por um filtro de
+segurança para garantir que a restante aplicação fica protegida (1).
+Depois, o LLM começará por extrair termos de pesquisa
+relevantes a partir da mensagem do utilizador (2). Estes termos
+serão passados por *encoder* que possibilitará realizar
+uma pesquisa semântica numa base de dados (3) de onde se obtêm um conjunto de documentos
+potencialmente relevantes para responder ao utilizador (4). Estes documentos
+são introduzidos no contexto do modelo (5) para a resposta final ser
+gerada com as devidas citações (6).
 
-.. image:: _static/RAG.png
+.. image:: _static/RAG2.png
    :alt: Fluxo RAG
    :width: 800px
 
@@ -29,8 +33,9 @@ funcionalidade, como é o caso do
 `OpenSearch <https://opensearch.org/>`__.
 
 De forma a tirar partido de pesquisa semântica, é necessário gerar
-vetores de *embeddings* semânticos para cada documento usando um modelo
-do tipo *SentenceTransformers*, existindo uma variedade de modelos
+vetores de *embeddings* semânticos para cada documento. Para isto,
+é usado um *encoder*, que será um modelo
+do tipo *SentenceTransformers*. Existe uma variedade de modelos
 multilingues deste tipo publicamente disponíveis, tais como o `Qwen3-Embedding-0.6B <https://huggingface.co/Qwen/Qwen3-Embedding-0.6B>`__,
 o `BGE-M3 <https://huggingface.co/BAAI/bge-m3>`__ ou o `nomic-embed-text-v1.5 <https://huggingface.co/nomic-ai/nomic-embed-text-v1.5>`__.
 Estes podem ser usados como no exemplo:
