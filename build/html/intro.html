@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Multimodal Model Card &#8212; Documentação AMALIA</title>
+    <title>Introdução &#8212; Documentação AMALIA</title>
   
   
   
@@ -46,13 +46,13 @@
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'multimodal_model_card';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/js/brands.min.js"></script>
     <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Casos de Uso" href="use_cases.html" />
-    <link rel="prev" title="Model Card" href="model_card.html" />
+    <link rel="next" title="Construir Aplicações RAG" href="rag.html" />
+    <link rel="prev" title="Documentação AMALIA" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -176,10 +176,10 @@
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main Navigation">
     <div class="bd-toc-item navbar-nav">
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="intro.html">Introdução</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Introdução</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rag.html">Construir Aplicações RAG</a></li>
 <li class="toctree-l1"><a class="reference internal" href="model_card.html">Model Card</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Multimodal Model Card</a></li>
+<li class="toctree-l1"><a class="reference internal" href="multimodal_model_card.html">Multimodal Model Card</a></li>
 <li class="toctree-l1"><a class="reference internal" href="use_cases.html">Casos de Uso</a></li>
 </ul>
 
@@ -189,7 +189,7 @@
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     const jsonUrl = "_static/global_sections.json";
-    const currentDocname = "multimodal_model_card";
+    const currentDocname = "intro";
 
     fetch(jsonUrl)
         .then(response => response.json())
@@ -533,7 +533,7 @@ document.addEventListener("DOMContentLoaded", function() {
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Multimodal Model Card</h1>
+    <h1>Introdução</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -543,13 +543,13 @@ document.addEventListener("DOMContentLoaded", function() {
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#descricao-do-modelo">Descrição do Modelo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#detalhes-de-treino-multimodal">Detalhes de Treino Multimodal</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dados-de-treino">Dados de Treino</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#processo-de-treino">Processo de Treino</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acesso-via-iaedu">Acesso via IAedu</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacao">Instalação</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#servir-uma-api-localmente">Servir uma API localmente</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#utilizacao-de-api-local">Utilização de API local</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#utilizacao-do-modelo-multimodal">Utilização do Modelo Multimodal</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#avaliacao">Avaliação</a></li>
 </ul>
             </nav>
         </div>
@@ -561,14 +561,11 @@ document.addEventListener("DOMContentLoaded", function() {
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="multimodal-model-card">
-<h1>Multimodal Model Card<a class="headerlink" href="#multimodal-model-card" title="Link to this heading">#</a></h1>
-<p>O AMALIA-VL é um modelo de multimodal (visão e linguagem) aberto e criado especificamente para o
-português de Portugal e para a cultura portuguesa.</p>
-<section id="descricao-do-modelo">
-<h2>Descrição do Modelo<a class="headerlink" href="#descricao-do-modelo" title="Link to this heading">#</a></h2>
-<p>O AMALIA-VL é desenvolvido no âmbito do projeto AMALIA.</p>
-<p>O projeto AMALIA é desenvolvido por um consórcio de universidades e centros de
+  <section id="introducao">
+<h1>Introdução<a class="headerlink" href="#introducao" title="Link to this heading">#</a></h1>
+<p>O AMALIA é um modelo de linguagem aberto e criado especificamente para
+o português de Portugal e para a cultura portuguesa.</p>
+<p>O AMALIA é desenvolvido por um consórcio de universidades e centros de
 investigação portugueses, incluindo a Universidade NOVA de Lisboa,
 Instituto Superior Técnico, Universidade de Coimbra, Universidade do
 Porto, Universidade do Minho e pela Fundação para a Ciência e
@@ -577,138 +574,197 @@ da Beira Interior, Universidade de Évora, e Instituto Superior de Engenharia
 de Lisboa.</p>
 <p>Esta colaboração é financiada pelos Programas de Desenvolvimento e
 Inovação do Governo de Portugal, com o objetivo de criar um assistente
-de IA avançado capaz de comunicar de forma eficaz em português europeu.</p>
-<p>O AMALIA-VL utiliza dados de fonte aberta no seu treino, e
-outros dados curados especificamente em português europeu. O AMALIA-VL é treinado com pós treino a partir do AMALIA. O treino foi feito em três
-fases: <em>Modality Alignment</em>, <em>Visual Instruction Following</em> e <em>Preference Tuning</em>.
-As primeiras duas fases são realizadas através de <em>Supervised Fine-Tuning</em> (SFT),
-e a última fase é realizada usando <em>Direct Preference Optimization</em> (DPO).</p>
+de IA avançado capaz de comunicar eficazmente em português europeu.</p>
+<section id="acesso-via-iaedu">
+<h2>Acesso via IAedu<a class="headerlink" href="#acesso-via-iaedu" title="Link to this heading">#</a></h2>
+<p>O AMALIA está disponível via API no <a class="reference external" href="https://iaedu.pt">IAedu</a> para
+professores e investigadores. Após realizar login e escolher o modelo
+AMALIA, os parâmetros da API podem ser obtidos clicando na roda no canto
+superior direito. Com estes, é possível interagir com o modelo usando o
+código:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<span class="n">formData</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;channel_id&quot;</span><span class="p">:</span> <span class="n">channel_id</span><span class="p">,</span>
+    <span class="s2">&quot;thread_id&quot;</span><span class="p">:</span> <span class="n">thread_id</span><span class="p">,</span>
+    <span class="s2">&quot;user_info&quot;</span><span class="p">:</span> <span class="s2">&quot;</span><span class="si">{}</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;message&quot;</span><span class="p">:</span> <span class="n">message</span>
+<span class="p">}</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span>
+    <span class="n">url</span><span class="o">=</span><span class="n">endpoint</span><span class="p">,</span>
+    <span class="n">headers</span><span class="o">=</span> <span class="p">{</span><span class="s1">&#39;x-api-key&#39;</span><span class="p">:</span> <span class="n">api_key</span> <span class="p">},</span>
+    <span class="n">data</span><span class="o">=</span><span class="n">formData</span>
+<span class="p">)</span>
+
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n\n</span><span class="s1">&#39;</span><span class="p">):</span>
+    <span class="n">jsonline</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">jsonline</span><span class="p">[</span><span class="s2">&quot;type&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;message&quot;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">jsonline</span><span class="p">[</span><span class="s2">&quot;content&quot;</span><span class="p">][</span><span class="s2">&quot;content&quot;</span><span class="p">])</span>
+        <span class="k">break</span>
+</pre></div>
+</div>
+<p>Neste exemplo, <code class="docutils literal notranslate"><span class="pre">message</span></code> representa a mensagem enviada ao modelo e
+<code class="docutils literal notranslate"><span class="pre">thread_id</span></code> é o identificador da conversa, para manutenção do
+contexto.</p>
 </section>
-<section id="detalhes-de-treino-multimodal">
-<h2>Detalhes de Treino Multimodal<a class="headerlink" href="#detalhes-de-treino-multimodal" title="Link to this heading">#</a></h2>
-<section id="dados-de-treino">
-<h3>Dados de Treino<a class="headerlink" href="#dados-de-treino" title="Link to this heading">#</a></h3>
-<p>Para a primeira fase, <em>Modality Alignment</em>, foram usados 500.000 pares de imagem e texto do
-dataset <a class="reference external" href="https://huggingface.co/datasets/PD12M">PD12M</a>. Estes foram parcialmente traduzidos
-para português europeu através do <a class="reference external" href="https://arxiv.org/abs/2503.19786">Gemma 3</a>.</p>
-<p>Para a seguinte fase, <em>Visual Instruction Following</em>, foi adotada uma mistura de dados sintéticos
-e dados públicos, que se dividem nas seguintes categorias:</p>
+<section id="instalacao">
+<h2>Instalação<a class="headerlink" href="#instalacao" title="Link to this heading">#</a></h2>
+<p>Todos os modelos do AMALIA estão publicamente disponíveis em código-aberto via <a class="reference external" href="https://huggingface.co/amalia-llm">HuggingFace</a>.
+Esta secção destina-se a explicar como qualquer pessoa ou entidade poderá
+instalar o AMALIA e como este poderá então ser utilizado para qualquer tipo de aplicações.</p>
+<section id="servir-uma-api-localmente">
+<h3>Servir uma API localmente<a class="headerlink" href="#servir-uma-api-localmente" title="Link to this heading">#</a></h3>
+<p>Para servir localmente o AMALIA, o hardware mínimo é de uma GPU <a class="reference external" href="https://www.nvidia.com/en-eu/data-center/a100/">NVIDIA A100 40GB</a>, sendo que
+para aplicações com vários clientes é recomendado um mínimo de 4 destas GPUs.
+O software recomendado é o <a class="reference external" href="https://vllm.ai/">vLLM</a> instalado em ambiente <a class="reference external" href="https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html">conda</a> com Python 3.12+:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>vllm_env<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.12
+uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>vllm<span class="w"> </span>--torch-backend<span class="o">=</span>auto
+<span class="c1"># Login HuggingFace</span>
+hf<span class="w"> </span>auth<span class="w"> </span>login
+</pre></div>
+</div>
+<p>O seguinte <em>script</em> <code class="docutils literal notranslate"><span class="pre">serve_llm.sh</span></code> exemplifica como servir o AMALIA com vLLM recorrendo ao gestor de recursos <a class="reference external" href="https://slurm.schedmd.com/overview.html">slurm</a>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="c1">#SBATCH --job-name=vllm-serve</span>
+<span class="c1">#SBATCH --partition=slurm_queue</span>
+<span class="c1">#SBATCH --nodes=1</span>
+<span class="c1">#SBATCH --ntasks=1</span>
+<span class="c1">#SBATCH --gres=gpu:nvidia_a100-40gb:4  # Pedir 4 GPUs</span>
+<span class="c1">#SBATCH --cpus-per-task=64             # Alocar CPUs do sistema</span>
+<span class="c1">#SBATCH --mem=256G                     # Alocar memória RAM do sistema</span>
+<span class="c1">#SBATCH --output=logs/%x-%j.out</span>
+<span class="c1">#SBATCH -e logs/%x-%j.err</span>
+
+<span class="c1"># Ativar o ambiente conda</span>
+<span class="nb">eval</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>conda<span class="w"> </span>shell.bash<span class="w"> </span>hook<span class="k">)</span><span class="s2">&quot;</span>
+<span class="nb">source</span><span class="w"> </span>activate<span class="w"> </span>vllm_env
+
+<span class="c1"># Correr vLLM</span>
+<span class="c1"># $1: Nome do modelo, $2: Host $3: Porto, $4: Chave API $5: Chat template</span>
+python<span class="w"> </span>-m<span class="w"> </span>vllm.entrypoints.openai.api_server<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--model<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--host<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$2</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--port<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$3</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--tokenizer-mode<span class="w"> </span>hf<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--config-format<span class="w"> </span>hf<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--tensor-parallel-size<span class="w"> </span><span class="m">4</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--gpu-memory-utilization<span class="w"> </span><span class="m">0</span>.90<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--api-key<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$4</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--chat-template<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$5</span><span class="s2">&quot;</span>
+</pre></div>
+</div>
+<p>Como exemplo, para correr localmente o modelo de texto no porto 8001, com uma certa chave de API <code class="docutils literal notranslate"><span class="pre">api_key</span></code>, o <em>script</em> pode ser lançado com o comando abaixo.
+O ficheiro <code class="docutils literal notranslate"><span class="pre">chat_template.jinja</span></code> padrão está disponível no repositório HuggingFace.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sbatch<span class="w"> </span>serve_llm.sh<span class="w"> </span>amalia-llm/AMALIA-9B-50-DPO<span class="w"> </span><span class="m">0</span>.0.0.0<span class="w"> </span><span class="m">8001</span><span class="w"> </span>api_key<span class="w"> </span>./chat_template.jinja
+</pre></div>
+</div>
+</section>
+<section id="utilizacao-de-api-local">
+<h3>Utilização de API local<a class="headerlink" href="#utilizacao-de-api-local" title="Link to this heading">#</a></h3>
+<p>Tendo o modelo disponível em servidor local, um exemplo simples de utilização
+com <code class="docutils literal notranslate"><span class="pre">curl</span></code> é:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>http://127.0.0.1:8001/v1/chat/completions<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer api_key&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--data<span class="w"> </span><span class="s1">&#39;{&quot;model&quot;: &quot;amalia-llm/AMALIA-9B-50-DPO&quot;, &quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Olá&quot;}]}&#39;</span>
+</pre></div>
+</div>
+<p>Ou usando Python:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;http://127.0.0.1:8001/v1/chat/completions&quot;</span>
+
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;Content-Type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="s2">&quot;Bearer api_key&quot;</span>
+<span class="p">}</span>
+
+<span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;model&quot;</span><span class="p">:</span> <span class="s2">&quot;amalia-llm/AMALIA-9B-50-DPO&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;messages&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;user&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="s2">&quot;Olá&quot;</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">payload</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s1">&#39;choices&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;content&#39;</span><span class="p">])</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Uma API local servida com vLLM desta forma segue o <a class="reference external" href="https://developers.openai.com/api/reference/resources/chat/subresources/completions/methods/create">formato de API da OpenAI</a>.</p>
+<p>Os exemplos anteriores mostram como enviar mensagens únicas ao modelo.
+Para fornecer contexto anterior de uma conversa, basta juntar turnos anteriores à lista de <code class="docutils literal notranslate"><span class="pre">messages</span></code>, como por exemplo:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;messages&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;user&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="s2">&quot;Por favor trata-me por Miguel&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;assistant&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="s2">&quot;Olá, Miguel. Como posso ajudar-te hoje?&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;user&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="s2">&quot;Qual é o meu nome?&quot;</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>Outros parâmetros opcionais que poderão ser úteis são:</p>
 <ul class="simple">
-<li><p><em>Image Grounding</em> (Ancoragem de respostas a imagens):</p>
-<ul>
-<li><p>Splits de extração de bounding boxes (caixas de coordenadas visuais) do <a class="reference external" href="https://huggingface.co/datasets/nvidia/Nemotron-VLM-Dataset-v2">Nemotron VLM Dataset v2</a>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">max_completion_tokens</span></code>: Permite limitar o número de <em>tokens</em> da resposta do modelo;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">temperature</span></code>: Permite ajustar a variância das respostas. Um valor de 0 produz respostas deterministas,
+valores mais próximos de 1 permitem mais variância;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">stream</span></code>: Se <code class="docutils literal notranslate"><span class="pre">true</span></code>, o modelo funcionará em formato de <em>streaming</em>, respondendo <em>token</em> a <em>token</em> à medida que estes são gerados em tempo real.
+O processamento da resposta deverá ser feita de forma diferente que anteriormente dado o seu formato diferente.</p></li>
 </ul>
-</li>
-<li><p><em>General VQA</em> (Perguntas e Respostas Visuais Gerais):</p>
-<ul>
-<li><p>Dados sintéticos criados para perguntas e respostas visuais com foco em português europeu, usando coleções de imagens abertas como o <a class="reference external" href="https://huggingface.co/datasets/PD12M">PD12M</a> e o <a class="reference external" href="https://storage.googleapis.com/openimages/web/index.html">Open Images</a>;</p></li>
-<li><p><em>Dataset AMALIA-Hardcoded</em> com conhecimento autorreferencial;</p></li>
-<li><p>Dados conversacionais gerados a partir da Wikipedia;</p></li>
-<li><p><em>Splits</em> de <em>VQA</em> do <a class="reference external" href="https://huggingface.co/datasets/nvidia/Llama-Nemotron-VLM-Dataset-v1">Nemotron VLM Dataset v1</a>;</p></li>
-<li><p>Vários outros conjuntos de dados públicos de <em>VQA</em> obtidos através da coleção <a class="reference external" href="https://huggingface.co/datasets/HuggingFaceM4/FineVision">FineVision</a>, incluindo:</p>
-<ul>
-<li><p><a class="reference external" href="https://visualqa.org">VQAv2</a>;</p></li>
-<li><p><a class="reference external" href="https://visualdialog.org">VisDialog</a>;</p></li>
-<li><p><a class="reference external" href="https://arxiv.org/pdf/2409.05840">MMEvol</a>;</p></li>
-<li><p><a class="reference external" href="https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K">LLaVA-150k</a>.</p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><em>OCR</em> (Extração Óptica de Caracteres):</p>
-<ul>
-<li><p>Dados sintéticos criados para reconhecimento visual de código;</p></li>
-<li><p><em>Splits</em> de <em>OCR</em> do <a class="reference external" href="https://huggingface.co/datasets/nvidia/Llama-Nemotron-VLM-Dataset-v1">Nemotron VLM Dataset v1</a>;</p></li>
-<li><p><a class="reference external" href="https://cvit.iiit.ac.in/research/projects/cvit-projects/the-iiit-5k-word-dataset">IIIT-5k</a>.</p></li>
-</ul>
-</li>
-<li><p><em>OCR QA</em> (Perguntas e Respostas sobre texto em imagens):</p>
-<ul>
-<li><p>Dados sintéticos em português europeu para reconhecimento e compreensão visual de texto;</p></li>
-<li><p><a class="reference external" href="https://textvqa.org">TextVQA</a>;</p></li>
-<li><p><a class="reference external" href="https://ocr-vqa.github.io">OCR-VQA</a>.</p></li>
-</ul>
-</li>
-<li><p><em>Chart &amp; Table Understanding</em> (Compreensão de Gráficos e Tabelas):</p>
-<ul>
-<li><p>Dados sintéticos para compreensão de gráficos e tabelas em português europeu e contextos multilingues;</p></li>
-<li><p>Conjuntos de dados de compreensão de gráficos e tabelas do <a class="reference external" href="https://huggingface.co/datasets/nvidia/Llama-Nemotron-VLM-Dataset-v1">Nemotron VLM Dataset v1</a> e <a class="reference external" href="https://huggingface.co/datasets/nvidia/Nemotron-VLM-Dataset-v2">v2</a>.</p></li>
-</ul>
-</li>
-<li><p>Outros:</p>
-<ul>
-<li><p>Dados sintéticos para descrição de imagens e compreensão de cenas, em português europeu e inglês;</p></li>
-<li><p>Dados sintéticos para conhecimento e reconhecimento de cultura portuguesa;</p></li>
-<li><p>Dados sintéticos para compreensão e interpretação de código em imagens;</p></li>
-<li><p>Dados públicos de compreensão matemática visual:</p>
-<ul>
-<li><p><a class="reference external" href="https://arxiv.org/abs/2208.05358">CLEVR-Math</a>;</p></li>
-<li><p><a class="reference external" href="https://arxiv.org/abs/2312.12241">Geomverse</a>;</p></li>
-<li><p><a class="reference external" href="https://huggingface.co/datasets/allenai/CoSyn-400K">CoSyn-Math</a>;</p></li>
-</ul>
-</li>
-<li><p>Dados sintéticos e públicos para compreensão de documentos visuais, incluindo <a class="reference external" href="https://docvqa.org">DocVQA</a>;</p></li>
-<li><p>Reutilização de dados de instrução textual do AMALIA-LLM para preservar o alinhamento entre as capacidades de linguagem e visão do modelo.</p></li>
-</ul>
-</li>
-</ul>
-<p>Para a fase final, de otimização de preferências, foram utilizados os dados sintéticos de otimização de preferências multimodal.
-Estes dados foram criados com base nos conjuntos de dados de treino da fase anterior, com o objetivo de melhorar a capacidade do modelo distinguir respostas de maior e menor qualidade para a mesma instrução.</p>
+<p>Um exemplo de utilização destes parâmetros é:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;model&quot;</span><span class="p">:</span> <span class="s2">&quot;amalia-llm/AMALIA-9B-50-DPO&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;messages&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;user&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="s2">&quot;Olá&quot;</span>
+        <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;max_completion_tokens&quot;</span><span class="p">:</span> <span class="mi">300</span><span class="p">,</span>
+    <span class="s2">&quot;temperature&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="s2">&quot;stream&quot;</span><span class="p">:</span> <span class="kc">True</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </section>
-<section id="processo-de-treino">
-<h3>Processo de Treino<a class="headerlink" href="#processo-de-treino" title="Link to this heading">#</a></h3>
-<p>A fase inicial de <em>Modality Alignment</em> tem como objetivo alinhar as
-representações de visão e linguagem do modelo, permitindo que o
-AMALIA-VL compreenda e integre informações visuais e textuais de forma
-eficaz. Para isto, apenas é treinado o conetor de modalidades, mantendo
-ambos os modelos de visão e linguagem congelados. Esta fase demorou 4
-horas em 8 GPUs NVIDIA H100, totalizando 2k <em>steps</em>.</p>
-<p>A segunda fase, de <em>Visual Instruction Following</em>, tem como objetivo
-ensinar o modelo a seguir instruções visuais e executar variadas tarefas
-com base em <em>inputs</em> visuais, incluindo perguntas e respostas visuais,
-ancoragem de respostas a imagens, compreensão de gráficos e tabelas,
-reconhecimento de texto em imagens e compreensão de cenas. Nesta fase,
-o modelo é treinado em regime de <em>Supervised Fine-Tuning</em> (SFT) e todos os
-parâmetros do modelo são treinados. Aqui, o modelo tem um contexto
-máximo de 16384 <em>tokens</em>, e uma capacidade de até 7800 <em>tokens</em> visuais por
-imagem. O treino decorreu durante 96 horas, recorrendo a 128 GPUs NVIDIA
-H100, totalizando 49k <em>steps</em>.</p>
-<p>A fase final de treino, de DPO, visa refinar as respostas do modelo através
-da aprendizagem baseada em comparações de pares. Nesta fase, para a mesma instrução, o modelo aprende a
-maximizar a probabilidade de gerar respostas de maior qualidade e minimizar a
-probabilidade de gerar respostas de menor, otimizando-se para gerar <em>outputs</em> mais úteis, seguros e
-alinhados com os valores desejados, minimizando simultaneamente
-comportamentos indesejados, como alucinações, toxicidade ou desvios das
-instruções fornecidas. O treino decorreu durante 12 horas, recorrendo a
-128 GPUs NVIDIA H100.</p>
-<p>Todas as fases de treino foram executadas no supercomputador
-<a class="reference external" href="https://www.bsc.es/marenostrum/marenostrum-5">MareNostrum5</a>, alojado
-no Barcelona Supercomputing Center.</p>
+<section id="utilizacao-do-modelo-multimodal">
+<h3>Utilização do Modelo Multimodal<a class="headerlink" href="#utilizacao-do-modelo-multimodal" title="Link to this heading">#</a></h3>
+<p>Com a versão multimodal (visão e linguagem) do AMALIA é possível também carregar imagens no <em>input</em> do utilizador, permitindo que o modelo responda a perguntas sobre o conteúdo da imagem.
+Para tal, basta seguir os passos detalhados anteriormente, adicionando apenas um <em>path</em> para a imagem ao <code class="docutils literal notranslate"><span class="pre">content</span></code> da mensagem, da forma:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;model&quot;</span><span class="p">:</span> <span class="s2">&quot;amalia-llm/AMALIA-VL-DPO&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;messages&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;user&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;image&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;image&quot;</span><span class="p">:</span> <span class="s2">&quot;path/to/image.png&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                    <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;text&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="s2">&quot;O que está nesta imagem?&quot;</span>
+                <span class="p">}</span>
+            <span class="p">]</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </section>
-</section>
-<section id="avaliacao">
-<h2>Avaliação<a class="headerlink" href="#avaliacao" title="Link to this heading">#</a></h2>
-<p>Para avaliar o desempenho do AMALIA-VL, foram traduzidas 18 <em>benchmarks</em>
-multimodais para português europeu, utilizando modelos de estado da
-arte. Para garantir a qualidade das traduções, foi realizada uma
-revisão humana em <em>subsets</em> dos dados para validar a precisão e a
-fluidez das traduções.</p>
-<p>Adicionalmente, foram criados dois <em>benchmarks</em> para avaliar o AMALIA-VL
-em capacidades específicas do português europeu e da cultura portuguesa:</p>
-<ul class="simple">
-<li><p><strong>PorTEXTO</strong> (<em>European Portuguese Benchmark for Visual Text Extraction</em>):
-desenvolvido para avaliar o desempenho dos modelos abertos na extração de texto pt-PT
-a partir de imagens, incluindo: documentos com texto escrito manualmente,
-texto em ambientes reais e típicos na cultura portuguesa, e documentos com texto
-sinteticamente gerado sobre imagens de fundo;</p></li>
-<li><p><strong>CARAVELA</strong> (<em>Cultural Awareness and Recognition Assessment for Visual Entity Literacy and Analysis</em>):
-desenvolvido para avaliar o conhecimento dos modelos sobre a cultura e a história portuguesas,
-abrangendo cinco categorias distintas: Arte, Gastronomia, Localidades, Monumentos e Personalidades.</p></li>
-</ul>
-<p>A avaliação mostra que, dentro dos modelos abertos, o AMALIA-VL é
-<strong>altamente competitivo</strong> em português europeu, com excelente desempenho
-em tarefas de compreensão de texto em imagens e em tarefas de
-ancoragem de respostas a imagens.</p>
 </section>
 </section>
 
@@ -724,20 +780,20 @@ ancoragem de respostas a imagens.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="model_card.html"
+       href="index.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Model Card</p>
+        <p class="prev-next-title">Documentação AMALIA</p>
       </div>
     </a>
     <a class="right-next"
-       href="use_cases.html"
+       href="rag.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Casos de Uso</p>
+        <p class="prev-next-title">Construir Aplicações RAG</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -759,13 +815,13 @@ ancoragem de respostas a imagens.</p>
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#descricao-do-modelo">Descrição do Modelo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#detalhes-de-treino-multimodal">Detalhes de Treino Multimodal</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dados-de-treino">Dados de Treino</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#processo-de-treino">Processo de Treino</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acesso-via-iaedu">Acesso via IAedu</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instalacao">Instalação</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#servir-uma-api-localmente">Servir uma API localmente</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#utilizacao-de-api-local">Utilização de API local</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#utilizacao-do-modelo-multimodal">Utilização do Modelo Multimodal</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#avaliacao">Avaliação</a></li>
 </ul>
   </nav></div>
 

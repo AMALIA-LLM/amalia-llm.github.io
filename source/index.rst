@@ -19,7 +19,7 @@ Tabela de Conteúdos
 .. toctree::
    :maxdepth: 2
 
-   como_usar
+   intro
    rag
    model_card
    multimodal_model_card
